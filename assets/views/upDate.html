@@ -1,0 +1,23 @@
+<section class="container mt-2">
+  <h2 class="text-center">Modificar</h2>
+  <form ng-submit="upDateItem()">
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputName">Nombre</label>
+        <input type="text" class="form-control" id="inputName" placeholder="Nombre del Usuario"
+          ng-model="objectItem.nombre">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="inputEmail">Email</label>
+        <input type="email" class="form-control" id="inputEmail" placeholder="user@service.com"
+          ng-model="objectItem.email">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="inputAddress">Direccion</label>
+      <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St"
+        ng-model="objectItem.direccion">
+    </div>
+    <input type="submit" class="btn btn-primary" value="Actualizar"></input>
+  </form>
+</section>
